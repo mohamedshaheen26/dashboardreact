@@ -1,0 +1,63 @@
+.projects .box .heading {
+  align-items: flex-start;
+}
+
+.projects .members {
+  position: relative;
+  min-height: 100px;
+}
+
+.projects .members img {
+  position: absolute;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: 2px solid white;
+  cursor: pointer;
+}
+.projects .members img:hover {
+  z-index: 2000;
+  transform: translateY(-5px);
+}
+
+.projects .members img:nth-child(2) {
+  left: 25px;
+}
+.projects .members img:nth-child(3) {
+  left: 50px;
+}
+.projects .members img:nth-child(4) {
+  left: 75px;
+}
+.projects .members img:nth-child(5) {
+  left: 100px;
+}
+
+@media (max-width: 767px) {
+  .projects .do {
+    flex-direction: column;
+  }
+  .projects .do span {
+    width: fit-content;
+    margin-bottom: 5px;
+  }
+}
+
+.projects .progress {
+  width: 250px;
+  height: 8px;
+}
+.projects .progress span {
+  display: block;
+  height: 100%;
+}
+
+@media (max-width: 425px) {
+  .projects .prog {
+    flex-direction: column;
+  }
+  .projects .progress {
+    width: 200px;
+    margin-top: 15px;
+  }
+}

@@ -1,0 +1,388 @@
+/* Start First Widget => Welcome */
+.welcome {
+  overflow: hidden;
+}
+
+.welcome .intro img {
+  width: 200px;
+  margin-bottom: -10px;
+}
+
+.welcome .avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0 0 5px #ddd;
+  margin-left: 20px;
+  margin-top: -32px;
+}
+
+.welcome .body {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.welcome .body > div {
+  flex: 1;
+}
+
+.welcome .visit {
+  margin: 0 15px 15px auto;
+  transition: 0.3s;
+}
+
+.welcome .visit:hover {
+  background: var(--blue-alt-color);
+}
+
+@media (max-width: 767px) {
+  .welcome .intro {
+    padding-bottom: 30px;
+  }
+
+  .welcome .avatar {
+    margin-left: 0;
+  }
+
+  .welcome .body > div:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+/* End First Widget => Welcome */
+
+/* Start Second Widget => Quick Draft */
+.quick textarea {
+  resize: none;
+  min-height: 180px;
+}
+
+.quick .save {
+  margin: 0 0 0 auto;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.quick .save:hover {
+  background: var(--blue-alt-color);
+}
+/* End Second Widget => Quick Draft */
+
+/* Start Third Widget => Yearly Targets */
+.targets .target-row .icons {
+  width: 80px;
+  height: 80px;
+}
+
+.targets .progress-bar {
+  height: 4px;
+}
+
+.targets .progress-bar > span {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.targets .progress-bar > span span {
+  position: absolute;
+  padding: 2px 5px;
+  right: -16px;
+  bottom: 16px;
+  border-radius: 6px;
+  font-size: 13px;
+  color: white;
+}
+
+.targets .progress-bar > span span::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+}
+
+.targets .progress-bar > .blue span::before {
+  border-color: var(--blue-color) transparent transparent;
+}
+
+.targets .progress-bar > .orange span::before {
+  border-color: var(--orange-color) transparent transparent;
+}
+
+.targets .progress-bar > .green span::before {
+  border-color: var(--green-color) transparent transparent;
+}
+
+.blue .icons,
+.blue .progress-bar {
+  background: rgb(0 117 255 / 20%);
+}
+
+.orange .icons,
+.orange .progress-bar {
+  background: rgb(245 158 11 / 20%);
+}
+
+.green .icons,
+.green .progress-bar {
+  background: rgb(34 197 94 / 20%);
+}
+/* End Third Widget => Yearly Targets */
+
+/* Start Fourth Widget => Tickets Statistics */
+.tickets .box {
+  width: calc(50% - 10px);
+  border: 1px solid #ccc;
+}
+
+@media (max-width: 767px) {
+  .tickets .box {
+    width: 100%;
+  }
+}
+/* End Fourth Widget => Tickets Statistics */
+
+/* Start Fifth Widget => Latest News */
+.news .image {
+  width: 100px;
+}
+
+@media (max-width: 767px) {
+  .news .info {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0;
+  }
+}
+/* End Fifth Widget => Latest News */
+/* Start sixth Widget => Latest Tasks */
+.task-row {
+  position: relative;
+}
+
+.tasks .done {
+  opacity: 0.3;
+}
+.tasks .done h3,
+.tasks .done p {
+  text-decoration: line-through;
+}
+
+.tasks .delete {
+  cursor: pointer;
+}
+
+.tasks .delete:hover {
+  color: var(--red-color);
+}
+/* End sixth Widget => Latest Tasks */
+/* Start eighth Widget => Latest Uploads */
+.uploads img {
+  width: 40px;
+  height: 40px;
+}
+/* End eighth Widget => Latest Uploads */
+/* Start Ninth Widget => Last Project Progress */
+.last-project ul::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  left: 11px;
+  background: var(--blue-color);
+}
+
+.last-project ul li::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  display: block;
+  border-radius: 50%;
+  background: white;
+  border: 2px solid white;
+  outline: 2px solid blue;
+  z-index: 1;
+}
+
+.last-project ul .done::before {
+  background: var(--blue-color);
+}
+
+.last-project ul .current::before {
+  -webkit-animation: change-color 0.8s alternate infinite;
+  animation: change-color 0.8s alternate infinite;
+}
+
+@-webkit-keyframes change-color {
+  from {
+    background: var(--blue-color);
+  }
+  to {
+    background: white;
+  }
+}
+
+@keyframes change-color {
+  from {
+    background: var(--blue-color);
+  }
+  to {
+    background: white;
+  }
+}
+
+.last-project img {
+  position: absolute;
+  width: 150px;
+  right: 0;
+  bottom: 0;
+  opacity: 0.4;
+}
+/* End Ninth Widget => Last Project Progress */
+/* Start Tenth Widget => Reminders */
+.reminders .reminder-row span {
+  width: 15px;
+  height: 15px;
+  display: block;
+  border-radius: 50%;
+}
+
+.reminders .reminder-row .content {
+  padding-left: 15px;
+}
+
+.reminders .reminder-row .blue {
+  border-left: 3px solid var(--blue-color);
+}
+
+.reminders .reminder-row .green {
+  border-left: 3px solid var(--green-color);
+}
+
+.reminders .reminder-row .orange {
+  border-left: 3px solid var(--orange-color);
+}
+
+.reminders .reminder-row .red {
+  border-left: 3px solid var(--red-color);
+}
+/* End Tenth Widget => Reminders */
+/* Start Eleventh Widget => Latest Post */
+.posts img {
+  width: 48px;
+  height: 48px;
+}
+
+.posts .post-content {
+  line-height: 1.8;
+  min-height: 180px;
+  text-transform: capitalize;
+}
+
+/* Start Twelfth Widget => Social Media Stats */
+.social-media .box {
+  padding-left: 70px;
+}
+
+.social-media .box i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 52px;
+  transition: 0.3s;
+}
+
+.social-media .box i:hover {
+  transform: scale(1.1);
+}
+
+.social-media .twitter {
+  background: rgba(29 161 242 / 20%);
+  color: #1da1f2;
+}
+
+.social-media .facebook {
+  background: rgba(24 119 242 / 20%);
+  color: #1da1f2;
+}
+
+.social-media .youtube {
+  background: rgba(255 0 0 / 20%);
+  color: #ff0000;
+}
+
+.social-media .linkedin {
+  background: rgba(0 119 181 / 20%);
+  color: #0077b5;
+}
+
+.social-media .twitter i,
+.social-media .twitter a {
+  background: #1da1f2;
+}
+
+.social-media .facebook i,
+.social-media .facebook a {
+  background: #1da1f2;
+}
+
+.social-media .youtube i,
+.social-media .youtube a {
+  background: #ff0000;
+}
+
+.social-media .linkedin i,
+.social-media .linkedin a {
+  background: #0077b5;
+}
+/* End Twelfth Widget => Social Media Stats */
+/* End Eleventh Widget => Latest Post */
+/* Start Projects Table */
+.projects .responsive-table {
+  overflow-x: auto;
+}
+
+.projects table {
+  min-width: 1000px;
+  border-spacing: 0;
+}
+
+.projects thead td {
+  background: #eee;
+  font-weight: bold;
+}
+
+.projects td {
+  padding: 15px;
+}
+
+.projects tbody td {
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
+  transition: 0.3s;
+}
+
+.projects table thead tr td:last-child {
+  border-right: 1 px solid #eee;
+}
+
+.projects tbody tr:hover td {
+  background: #faf7f7;
+}
+
+.projects table img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  padding: 2px;
+  background: white;
+}
+
+.projects table img:not(:first-child) {
+  margin-left: -20px;
+}
+/* End Projects Table */

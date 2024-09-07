@@ -1,0 +1,77 @@
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 250px;
+  box-shadow: 0 0 10px #ddd;
+  z-index: 100;
+}
+
+header .search::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f002";
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
+  font-size: 14px;
+  color: var(--gray-color);
+}
+
+header .search input {
+  margin-left: 5px;
+  padding-left: 30px;
+  width: 160px;
+  transition: width 0.3s;
+}
+
+header .search input:focus {
+  width: 200px;
+}
+
+header .search input:focus::-webkit-input-placeholder {
+  visibility: hidden;
+}
+
+header .search input:focus::-moz-placeholder {
+  visibility: hidden;
+}
+
+header .search input:focus:-ms-input-placeholder {
+  visibility: hidden;
+}
+
+header .search input:focus::-ms-input-placeholder {
+  visibility: hidden;
+}
+
+header .search input:focus::placeholder {
+  visibility: hidden;
+}
+
+@media (max-width: 375px) {
+  header .search input {
+    width: 20px;
+  }
+  header .search input:focus {
+    width: 150px;
+  }
+}
+
+header .icons .notification::before {
+  content: "";
+  position: absolute;
+  background: var(--red-color);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  right: -5px;
+  top: -5px;
+}
+
+header .icons img {
+  width: 32px;
+  height: 32px;
+  margin-left: 15px;
+}

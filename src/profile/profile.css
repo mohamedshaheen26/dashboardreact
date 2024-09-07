@@ -1,0 +1,125 @@
+.profile .overview .avatar-box {
+  width: 300px;
+}
+
+@media (min-width: 768px) {
+  .profile .overview .avatar-box {
+    border-right: 1px solid #eee;
+  }
+}
+
+.profile .overview .avatar-box img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.profile .overview .avatar-box .level {
+  height: 6px;
+  width: 70%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.profile .overview .avatar-box .level span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: var(--blue-color);
+  border-radius: 6px;
+}
+
+@media (min-width: 768px) {
+  .profile .overview .info .info-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+.profile .overview .info .info-row {
+  transition: 0.3s;
+}
+
+.profile .overview .info .info-row:hover {
+  background: #f9f9f9;
+}
+
+.profile .overview .info .info-row > div {
+  padding: 10px 0 0;
+}
+
+@media (min-width: 375px) {
+  .profile .overview .info .info-row > div {
+    min-width: 250px;
+  }
+}
+
+.profile .overview .info .info-row h4 {
+  font-weight: normal;
+}
+
+.profile .overview .info .toggle-switch {
+  height: 20px;
+}
+
+@media (max-width: 767px) {
+  .profile .overview .info .toggle-switch {
+    margin: auto;
+  }
+}
+
+.profile .overview .info .toggle-switch::before {
+  height: 12px;
+  width: 12px;
+  font-size: 8px;
+}
+
+.profile .overview .info .toggle-checkbox:checked + .toggle-switch::before {
+  left: 62px;
+}
+
+@media (max-width: 767px) {
+  .profile .other-data {
+    flex-direction: column;
+  }
+}
+
+.profile .other-data .skills {
+  flex-grow: 1;
+}
+
+.profile .other-data .activities {
+  flex-grow: 2;
+}
+
+.profile .other-data .activities img {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+@media (min-width: 425px) {
+  .profile .other-data .activities .date {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 424px) {
+  .profile .other-data .activity-row {
+    flex-direction: column;
+  }
+  .profile .other-data .activities img {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .profile .other-data .activities .date {
+    margin-top: 15px;
+  }
+  .profile .other-data .activities .date span {
+    text-align: center;
+  }
+}

@@ -1,0 +1,185 @@
+.settings-page {
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  margin: 0 20px 20px;
+}
+
+@media (max-width: 767px) {
+  .settings-page {
+    grid-template-columns: minmax(100px, 1fr);
+    margin: 0 10px;
+  }
+}
+/* Start First Widget =>  Site Control */
+.site-control textarea {
+  resize: none;
+  min-height: 150px;
+}
+/* End First Widget =>  Site Control */
+/* Start Second Widget =>  General Info */
+.general-info :disabled {
+  background: #f0f4f8;
+  cursor: no-drop;
+}
+/* End Second Widget =>  General Info */
+/* Start Third Widget =>  Security Info */
+.Security-info a {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.Security-info .change:hover {
+  background: var(--blue-alt-color);
+}
+
+.Security-info .device:hover {
+  background: #ddd;
+}
+/* End Third Widget =>  Security Info */
+/* Start Fourth Widget =>  Social Info */
+.social-info i {
+  width: 40px;
+  height: 40px;
+  background: #f6f6f6;
+  border: 1px solid #ddd;
+  border-right: none;
+  border-radius: 6px 0 0 6px;
+  transition: 0.3s;
+}
+
+.social-info input {
+  height: 40px;
+  background: #f6f6f6;
+  border: 1px solid #ddd;
+  padding-left: 10px;
+  border-radius: 0 6px 6px 0;
+}
+
+.social-info > div:focus-within i {
+  color: black;
+}
+/* End Fourth Widget =>  Social Info */
+/* Start Fifth Widget =>  Widgets Control */
+.widgets-control input {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+.widgets-control label {
+  padding-left: 30px;
+  cursor: pointer;
+  position: relative;
+}
+
+.widgets-control label::before,
+.widgets-control label::after {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -9px;
+  border-radius: 4px;
+}
+
+.widgets-control label::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  border: 2px solid var(--gray-color);
+}
+
+.widgets-control label:hover::before {
+  border-color: var(--blue-alt-color);
+}
+
+.widgets-control label::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  content: "\f00c";
+  background: var(--blue-color);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18px;
+  height: 18px;
+  transition: 0.3s;
+  transform: scale(0) rotate(1turn);
+}
+
+.widgets-control input:checked + label::after {
+  transform: scale(1);
+}
+/* End Fifth Widget =>  Widgets Control */
+/* Start Sixth Widget =>  Backup Manager */
+.backup input {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+.backup .date label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.backup .date label::before,
+.backup .date label::after {
+  content: "";
+  position: absolute;
+}
+
+.backup .date label::before {
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--gray-color);
+  border-radius: 50%;
+  left: 0;
+  top: 50%;
+  margin-top: -11px;
+}
+
+.backup .date label::after {
+  width: 12px;
+  height: 12px;
+  background: var(--blue-color);
+  border-radius: 50%;
+  left: 5px;
+  top: 5px;
+  transform: scale(0);
+  transition: 0.3s;
+}
+
+.backup .date input:checked + label::before {
+  border-color: var(--blue-color);
+}
+
+.backup .date input:checked + label::after {
+  transform: scale(1);
+}
+
+.backup .servers {
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+
+@media (max-width: 767px) {
+  .backup .servers {
+    flex-wrap: wrap;
+  }
+}
+
+.backup .servers .server {
+  border: 2px solid #eee;
+  position: relative;
+  padding: 20px;
+}
+
+.backup .servers .server label {
+  cursor: pointer;
+}
+
+.backup .servers input:checked + .server {
+  border-color: var(--blue-color);
+  color: var(--blue-color);
+}
+/* End Sixth Widget =>  Backup Manager */

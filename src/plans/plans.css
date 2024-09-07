@@ -1,0 +1,41 @@
+.plans {
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+@media (max-width: 767px) {
+  .plans {
+    grid-template-columns: minmax(200px, 1fr);
+    gap: 10px;
+    margin: 10px;
+  }
+}
+
+.plans .box p {
+  font-size: 40px;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.plans .box p i {
+  left: -17px;
+  top: 7px;
+}
+
+.plans .box ul li .help {
+  margin-left: auto;
+  color: var(--gray-color);
+}
+
+.plans .box ul li .green:hover {
+  color: var(--green-color);
+  cursor: pointer;
+}
+
+.plans .box ul li .blue:hover {
+  color: var(--blue-color);
+  cursor: pointer;
+}
+
+.plans .box ul li .orange:hover {
+  color: var(--orange-color);
+  cursor: pointer;
+}

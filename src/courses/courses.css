@@ -1,0 +1,43 @@
+.courses {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  margin: 0 20px 20px;
+}
+
+@media (max-width: 767px) {
+  .courses {
+    grid-template-columns: minmax(200px, 1fr);
+    gap: 10px;
+    margin: 0 10px;
+  }
+}
+
+.courses .box {
+  overflow: hidden;
+}
+
+.courses .team {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.courses .content p {
+  line-height: 1.6;
+}
+
+.courses .info {
+  border-top: 1px solid #eee;
+}
+
+.courses .info button {
+  position: absolute;
+  bottom: 36px;
+  right: 50%;
+  transform: translateX(50%);
+  z-index: 100;
+}
