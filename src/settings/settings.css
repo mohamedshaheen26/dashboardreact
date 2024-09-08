@@ -81,8 +81,8 @@
 
 .widgets-control label::before {
   content: "";
-  width: 14px;
-  height: 14px;
+  width: 18px;
+  height: 18px;
   border: 2px solid var(--gray-color);
 }
 
@@ -139,11 +139,11 @@
 }
 
 .backup .date label::after {
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   background: var(--blue-color);
   border-radius: 50%;
-  left: 5px;
+  left: 4px;
   top: 5px;
   transform: scale(0);
   transition: 0.3s;

@@ -1,7 +1,8 @@
 import "./App.css";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { createTheme, ThemeProvider, CssBaseline } from "@mui/material";
+import { useState, useEffect, useMemo } from "react";
 
 import Header from "./header/header";
 import Home from "./home/home";
@@ -16,46 +17,58 @@ import Plans from "./plans/plans";
 import Drafts from "./drafts/drafts";
 
 function App() {
-
   const [darkMode, setDarkMode] = useState(false);
 
-  // Toggle dark mode
+  // Create MUI theme based on darkMode state
+  const theme = useMemo(
+    () =>
+      createTheme({
+        palette: {
+          mode: darkMode ? "dark" : "light",
+        },
+      }),
+    [darkMode]
+  );
+
+  // Function to toggle dark mode
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
   };
 
-  // Save theme preference in localStorage
   useEffect(() => {
-    const savedTheme = window.localStorage.getItem('darkMode');
+    const savedTheme = window.localStorage.getItem("darkMode");
     if (savedTheme) {
       setDarkMode(JSON.parse(savedTheme));
     }
   }, []);
 
   useEffect(() => {
-    window.localStorage.setItem('darkMode', JSON.stringify(darkMode));
+    window.localStorage.setItem("darkMode", JSON.stringify(darkMode));
   }, [darkMode]);
 
   return (
-    <div className={`page d-flex ${darkMode ? 'dark-mode' : ''}`} id='page'>
-      <BrowserRouter>
-        <Sidebar />
-        <div className='content-body w-full'>
-          <Header toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
-          <Routes>
-            <Route index element={<Home />} />
-            <Route path='/settings' element={<Settings />} />
-            <Route path='/profile' element={<Profile />} />
-            <Route path='/projects' element={<Projects />} />
-            <Route path='/courses' element={<Courses />} />
-            <Route path='/friends' element={<Friends />} />
-            <Route path='/files' element={<Files />} />
-            <Route path='/plans' element={<Plans />} />
-            <Route path='/drafts' element={<Drafts />} />
-          </Routes>
-        </div>
-      </BrowserRouter>
-    </div>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <div className={`page d-flex ${darkMode ? "dark-mode" : ""}`} id='page'>
+        <BrowserRouter>
+          <Sidebar  />
+          <div className='content-body w-full'>
+            <Header toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
+            <Routes>
+              <Route index element={<Home />} />
+              <Route path='/settings' element={<Settings />} />
+              <Route path='/profile' element={<Profile />} />
+              <Route path='/projects' element={<Projects />} />
+              <Route path='/courses' element={<Courses />} />
+              <Route path='/friends' element={<Friends />} />
+              <Route path='/files' element={<Files />} />
+              <Route path='/plans' element={<Plans />} />
+              <Route path='/drafts' element={<Drafts />} />
+            </Routes>
+          </div>
+        </BrowserRouter>
+      </div>
+    </ThemeProvider>
   );
 }
 

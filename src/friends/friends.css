@@ -16,6 +16,8 @@
   position: absolute;
   top: 10px;
   left: 10px;
+  display: flex;
+  gap: 5px;
 }
 
 .friends .box .icon i {
@@ -48,4 +50,9 @@
   font-size: 40px;
   font-weight: bold;
   opacity: 0.2;
+}
+
+.friends .box .btn-action {
+  display: flex;
+  gap: 5px;
 }

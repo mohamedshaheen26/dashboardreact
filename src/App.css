@@ -12,7 +12,7 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif !important;
   margin: 0;
 }
 
@@ -31,11 +31,6 @@ a {
 
 button {
   cursor: pointer;
-}
-
-.dark-mode {
-  background-color: #121212;
-  color: #ffffff;
 }
 
 .page {
@@ -313,6 +308,10 @@ body {
 }
 /* End Padding + Margin */
 /* Start Colorsv */
+.bg-transparent {
+  background: transparent;
+}
+
 .bg-white {
   background: white;
 }
@@ -472,3 +471,185 @@ body {
   border-radius: 6px;
 }
 /* End Component */
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode aside {
+  background-color: #121212;
+  color: #ffffff;
+  box-shadow: 0 0 10px #2c2c2c;
+}
+
+.dark-mode a {
+  color: #fff;
+  background-color: #121212;
+}
+
+.dark-mode a:hover,
+.dark-mode a.active {
+  background: #222222 !important;
+}
+
+@media (min-width: 767px) {
+  .dark-mode aside > h3::before {
+    background: white;
+  }
+}
+
+.dark-mode header {
+  background-color: #121212;
+  box-shadow: 0 0 10px #2c2c2c;
+}
+
+.dark-mode .welcome .avatar {
+  box-shadow: 0 0 10px #2c2c2c;
+}
+
+.dark-mode input {
+  background-color: #2c2c2c;
+  color: #ffffff;
+  border: 1px solid #404040;
+}
+
+.dark-mode textarea {
+  background-color: #2c2c2c;
+  color: #ffffff;
+  border: 1px solid #404040;
+}
+
+.dark-mode input[type="submit"] {
+  background-color: #121212;
+  border: none;
+}
+
+.dark-mode input[type="submit"]:hover {
+  background-color: #222222;
+}
+
+.dark-mode .Special-heading::before {
+  background-color: #2c2c2c;
+}
+
+.dark-mode .Special-heading::after {
+  background-color: white;
+}
+
+.dark-mode .wrapper {
+  background-color: #121212;
+}
+.dark-mode .wrapper > div {
+  background-color: #2c2c2c;
+}
+
+.dark-mode .intro {
+  background-color: #222222;
+}
+
+.dark-mode .box span {
+  color: #fff;
+}
+
+.dark-mode .news span,
+.dark-mode .search ul span,
+.dark-mode .uploads .upload-row > span {
+  background-color: #404040;
+}
+
+.dark-mode .projects {
+  background-color: #222222;
+}
+
+.dark-mode .projects thead td {
+  background-color: #2d2d2d;
+}
+
+.dark-mode .projects tbody td {
+  transition: 0.3s;
+  border: 1px solid #2d2d2d;
+}
+
+.dark-mode .projects tbody tr:hover td {
+  background-color: #404040;
+}
+.dark-mode .general-info :disabled {
+  background-color: #404040;
+}
+
+.dark-mode .social-info > div input,
+.dark-mode .social-info > div i {
+  background-color: #2c2c2c;
+  border: 1px solid #404040;
+}
+
+.dark-mode .social-info > div:focus-within i {
+  color: white;
+}
+
+.dark-mode .toggle-switch {
+  background-color: #222222;
+}
+
+.dark-mode .profile {
+  background-color: #121212;
+}
+
+.dark-mode .profile .overview {
+  background-color: #2c2c2c;
+}
+
+.dark-mode .profile .overview .avatar-box {
+  border-color: #404040;
+}
+
+.dark-mode .profile .overview .info-row {
+  border-color: #404040;
+}
+
+.dark-mode .profile .overview .info .info-row:hover {
+  background-color: #404040;
+}
+
+.dark-mode .profile .other-data > div {
+  background-color: #2c2c2c;
+}
+
+.dark-mode .profile .other-data .skill-row .btn-shape {
+  background-color: #404040;
+}
+
+.dark-mode .projects.wrapper {
+  background-color: #121212;
+}
+
+.dark-mode .projects .box .do span {
+  background-color: #404040;
+}
+
+.dark-mode .projects .box .prog p {
+  color: var(--gray-color);
+}
+
+.dark-mode .courses .box {
+  background-color: #2c2c2c;
+}
+
+.dark-mode .friends .box {
+  background-color: #2c2c2c;
+}
+
+.dark-mode .files .box,
+.dark-mode .files .files-stats {
+  background-color: #2c2c2c;
+}
+
+.dark-mode .plans .box {
+  background-color: #2c2c2c;
+}
+
+.dark-mode .drafts .box {
+  background-color: #2c2c2c;
+}

@@ -91,6 +91,12 @@
   flex-grow: 1;
 }
 
+.profile .other-data .skills .skill-row {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
 .profile .other-data .activities {
   flex-grow: 2;
 }
