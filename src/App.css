@@ -490,13 +490,16 @@ body {
   box-shadow: 0 0 10px #2c2c2c;
 }
 
-.dark-mode a {
+.dark-mode aside a,
+.dark-mode .wrapper a {
   color: #fff;
   background-color: #121212;
 }
 
-.dark-mode a:hover,
-.dark-mode a.active {
+.dark-mode aside a:hover,
+.dark-mode aside a.active,
+.dark-mode .wrapper a:hover,
+.dark-mode .wrapper a.active {
   background: #222222 !important;
 }
 
@@ -660,10 +663,40 @@ body {
   background-color: #2c2c2c;
 }
 
-.dark-mode .Toastify__toast-theme--light{
+.dark-mode .Toastify__toast-theme--light {
   background-color: #2c2c2c;
 }
 
 .dark-mode .Toastify__close-button--light {
   color: white;
+}
+
+.dark-mode header .action .menu {
+  background-color: #222222;
+}
+
+.dark-mode .action .menu::before {
+  background: #222222;
+}
+
+.action .menu .user-name {
+  border-bottom: 1px solid rgb(66 66 66);
+}
+
+.dark-mode .action .menu ul li,
+.dark-mode .action .menu ul li a {
+  color: #fff !important;
+}
+
+.dark-mode header .action .menu ul li:hover {
+  background-color: #404040 !important;
+}
+
+.dark-mode .action .menu ul .log-out,
+.dark-mode .action .menu ul .log-out a {
+  color: #ff7875 !important;
+}
+
+.dark-mode .action .menu ul .log-out:hover {
+  background-color: #fff2f0 !important;
 }

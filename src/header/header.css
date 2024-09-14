@@ -136,3 +136,75 @@ header .icons img {
   height: 32px;
   margin-left: 15px;
 }
+
+.action .menu {
+  width: 180px;
+  position: absolute;
+  top: 50px;
+  right: -5px;
+  background: #fff;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  transition: 0.5s;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+.action .menu::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  transform: rotate(45deg);
+}
+
+.action .menu .user-name {
+  display: block;
+  padding: 10px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.action .menu ul {
+  margin-block: 5px;
+  padding-inline: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.action .menu ul li {
+  list-style: none;
+  padding: 5px 0;
+  border-radius: 10px;
+  cursor: pointer;
+  color: black;
+  transition: 0.5s;
+}
+
+.action .menu ul li:hover {
+  background-color: #eeeeee;
+}
+
+.action .menu ul li a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 15px;
+}
+
+.action .menu ul .log-out a {
+  justify-content: center;
+}
+
+.action .menu ul .log-out,
+.action .menu ul .log-out a {
+  color: #ff7875 !important;
+  text-align: center;
+}
+
+.action .menu ul .log-out:hover {
+  background-color: #fff2f0;
+}
