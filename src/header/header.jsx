@@ -52,7 +52,7 @@ const Header = ({ toggleDarkMode, darkMode }) => {
         <span className='p-relative notification'>
           <i className='fa-regular fa-bell fa-lg pointer'></i>
         </span>
-        <span className='action p-relative'>
+        <span className='user-account p-relative'>
           <img
             className='pointer profile-img'
             src='assets/imgs/avatar.png'

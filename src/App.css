@@ -671,32 +671,32 @@ body {
   color: white;
 }
 
-.dark-mode header .action .menu {
+.dark-mode header .user-account .menu {
   background-color: #222222;
 }
 
-.dark-mode .action .menu::before {
+.dark-mode .user-account .menu::before {
   background: #222222;
 }
 
-.action .menu .user-name {
+.dark-mode .user-account .menu .user-name {
   border-bottom: 1px solid rgb(66 66 66);
 }
 
-.dark-mode .action .menu ul li,
-.dark-mode .action .menu ul li a {
+.dark-mode .user-account .menu ul li,
+.dark-mode .user-account .menu ul li a {
   color: #fff !important;
 }
 
-.dark-mode header .action .menu ul li:hover {
+.dark-mode header .user-account .menu ul li a:hover {
   background-color: #404040 !important;
 }
 
-.dark-mode .action .menu ul .log-out,
-.dark-mode .action .menu ul .log-out a {
+.dark-mode .user-account .menu ul .log-out,
+.dark-mode .user-account .menu ul .log-out a {
   color: #ff7875 !important;
 }
 
-.dark-mode .action .menu ul .log-out:hover {
+.dark-mode .user-account .menu ul .log-out a:hover {
   background-color: #fff2f0 !important;
 }
