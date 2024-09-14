@@ -5,7 +5,6 @@ import "./plans.css"
 const Plans = () => {
   return (
     <>
-    <h1 className="Special-heading p-relative">Plans</h1>
         <div className="plans m-20 gap-20 d-grid">
           <div className="box p-20 bg-white">
             <div className="bg-green c-white txt-c p-20 border-white outline-green">

@@ -15,7 +15,6 @@ const Profile = () => {
   };
   return (
     <>
-      <h1 className='Special-heading p-relative'>Profile</h1>
       <div className='profile m-20'>
         <div className='overview d-flex align-c column bg-white rad-10'>
           <div className='avatar-box txt-c p-20'>

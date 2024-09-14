@@ -78,7 +78,6 @@ const SaveDraftForm = () => {
 const Home = () => {
   return (
     <>
-      <h1 className='Special-heading p-relative'>Dashboard</h1>
       <div className='wrapper d-grid gap-20'>
         <div className='welcome bg-white rad-10 txt-c-mobile block-mobile'>
           <div className='intro d-flex space-between bg-eee p-20'>

@@ -22,7 +22,6 @@ const Drafts = () => {
 
   return (
     <>
-      <h1 className="Special-heading p-relative">Drafts</h1>
       <div className="drafts d-flex flex-start m-20 gap-20">
         <div className="draft-content d-grid gap-20" id="drafts-content">
           {drafts.length > 0 ? (

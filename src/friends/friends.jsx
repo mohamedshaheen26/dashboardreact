@@ -5,7 +5,6 @@ import "./friends.css";
 const Friends = () => {
   return (
     <>
-      <h1 className='Special-heading p-relative'>Friends</h1>
       <div className='friends gap-20'>
         <div className='box p-relative bg-white p-20 rad-6'>
           <div className='icon'>

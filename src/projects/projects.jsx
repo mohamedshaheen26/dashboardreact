@@ -5,7 +5,6 @@ import "./projects.css";
 const Projects = () => {
   return (
     <>
-    <h1 className="Special-heading p-relative">Projects</h1>
         <div className="projects d-grid wrapper gap-20">
           <div className="box p-10 bg-white rad-6">
             <div className="heading between-flex">

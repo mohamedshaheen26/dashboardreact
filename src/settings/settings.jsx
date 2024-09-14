@@ -45,7 +45,6 @@ const Settings = () => {
 
   return (
     <>
-      <h1 className='Special-heading p-relative'>Settings</h1>
       <div className='settings-page wrapper d-grid gap-20'>
         <div className='site-control bg-white rad-10 p-20'>
           <h2 className='mt-0 mb-10'>Site Control</h2>

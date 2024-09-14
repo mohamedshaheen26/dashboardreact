@@ -5,7 +5,6 @@ import "./courses.css"
 const Courses = () => {
   return (
     <>
-    <h1 className="Special-heading p-relative">Courses</h1>
         <div className="courses gap-20">
           <div className="box rad-6 bg-white p-relative">
             <img className="team" src="assets/imgs/team-01.png" alt="" />

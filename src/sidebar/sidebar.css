@@ -7,14 +7,14 @@ aside {
   z-index: 999;
 }
 
-aside > h3 {
-  margin: 0 auto 50px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
 @media (min-width: 767px) {
+  aside > h3 {
+    margin: 0 auto 50px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
   aside > h3::before,
   aside > h3::after {
     content: "";
@@ -59,7 +59,6 @@ aside ul li a span {
     padding: 10px;
   }
   aside > h3 {
-    font-size: 13px;
-    margin-bottom: 15px;
+    display: none;
   }
 }

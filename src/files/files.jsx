@@ -5,7 +5,6 @@ import './files.css'
 const Files = () => {
   return (
     <>
-    <h1 className="Special-heading p-relative">Files</h1>
         <div className="files d-flex flex-start m-20 gap-20">
           <div className="files-content d-grid gap-20">
             <div className="box bg-white rad-10 p-10 p-relative">
