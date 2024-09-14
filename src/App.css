@@ -659,3 +659,11 @@ body {
 .dark-mode .drafts .box {
   background-color: #2c2c2c;
 }
+
+.dark-mode .Toastify__toast-theme--light{
+  background-color: #2c2c2c;
+}
+
+.dark-mode .Toastify__close-button--light {
+  color: white;
+}

@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
+import { ToastContainer, toast } from 'react-toastify';
 
 import "./home.css";
+import "react-toastify/dist/ReactToastify.css";
 
 const SaveDraftForm = () => {
   const [title, setTitle] = useState("");
   const [thought, setThought] = useState("");
   const [drafts, setDrafts] = useState([]);
-  const [showSuccess, setShowSuccess] = useState(false);
 
   // Load drafts from localStorage on component mount
   useEffect(() => {
@@ -33,22 +34,22 @@ const SaveDraftForm = () => {
 
       setDrafts([...drafts, newDraft]);
 
-      setShowSuccess(true);
-      setTimeout(() => setShowSuccess(false), 4000);
+      // Trigger a success toast notification
+      toast.success("Draft saved successfully!", {
+        position: "top-right",
+      });
 
       setTitle("");
       setThought("");
+    } else {
+      toast.error("Please fill in both fields!", {
+        position: "top-right",
+      });
     }
   };
 
   return (
     <div className='p-relative quick bg-white p-20 rad-10' id='quickDraft'>
-      {showSuccess && (
-        <div className='success'>
-          <i className='fa fa-check-circle ml-5 mr-5'></i>
-          <span>Draft saved successfully!</span>
-        </div>
-      )}
       <h2 className='mt-0 mb-10'>Quick Draft</h2>
       <p className='fs-15 c-gray mt-0 mb-20'>Write A Draft For Your Ideas</p>
       <form onSubmit={handleSubmit}>
@@ -71,6 +72,7 @@ const SaveDraftForm = () => {
           value='Save'
         />
       </form>
+       <ToastContainer />
     </div>
   );
 };
