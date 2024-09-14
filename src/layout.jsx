@@ -1,5 +1,5 @@
-import React from 'react';
-import { useLocation } from 'react-router-dom';
+import React, { Routes, Route, useLocation } from 'react-router-dom';
+
 import Sidebar from './sidebar/sidebar';
 import Header from './header/header';
 import Home from './home/home';
@@ -11,7 +11,7 @@ import Friends from './friends/friends';
 import Files from './files/files';
 import Plans from './plans/plans';
 import Drafts from './drafts/drafts';
-import { Routes, Route } from 'react-router-dom';
+import NotFound from './notFound';
 
 const Layout = ({ toggleDarkMode, darkMode }) => {
   const location = useLocation();
@@ -59,6 +59,7 @@ const Layout = ({ toggleDarkMode, darkMode }) => {
           <Route path='/files' element={<Files />} />
           <Route path='/plans' element={<Plans />} />
           <Route path='/drafts' element={<Drafts />} />
+          <Route path='/*' element={<NotFound />} />
         </Routes>
       </div>
     </>
