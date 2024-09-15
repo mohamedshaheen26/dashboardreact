@@ -25,6 +25,19 @@ function App() {
   };
 
   useEffect(() => {
+    if (darkMode) {
+      document.body.classList.add('dark-mode');
+    } else {
+      document.body.classList.remove('dark-mode');
+    }
+
+    // Optional: Clean up by removing class when the component unmounts
+    return () => {
+      document.body.classList.remove('dark-mode');
+    };
+  }, [darkMode]);
+
+  useEffect(() => {
     const savedTheme = window.localStorage.getItem("darkMode");
     if (savedTheme) {
       setDarkMode(JSON.parse(savedTheme));
@@ -38,7 +51,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <div className={`page d-flex ${darkMode ? "dark-mode" : ""}`} id='page'>
+      <div className='page d-flex' id='page'>
         <BrowserRouter>
           <Layout toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
         </BrowserRouter>
