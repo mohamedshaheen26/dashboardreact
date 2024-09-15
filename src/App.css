@@ -461,6 +461,11 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.flex-column-between {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .flex-column {
   display: flex;
   flex-direction: column;
@@ -727,4 +732,11 @@ body {
     scrollbar-width: thin;
     scrollbar-color: #555 #333;
   }
+}
+
+
+.spinner-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

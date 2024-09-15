@@ -4,7 +4,7 @@ header {
   right: 0;
   left: 250px;
   box-shadow: 0 0 10px #ddd;
-  z-index: 100;
+  z-index: 9998;
 }
 
 @media (max-width: 767px) {
