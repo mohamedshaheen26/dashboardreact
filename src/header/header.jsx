@@ -93,7 +93,7 @@ const Header = ({ toggleDarkMode, darkMode, title, searchQuery, setSearchQuery }
           </span>
         </div>
       </header>
-      <h1 className="Special-heading p-relative">{title}</h1>
+      {title ? <h1 className="Special-heading p-relative">{title}</h1> : ""}
     </>
   );
 };

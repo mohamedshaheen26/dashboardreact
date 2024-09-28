@@ -1,272 +1,897 @@
 [
   {
     "id": 1,
-    "title": "Introduction to React",
-    "description": "This course provides a comprehensive introduction to React, a popular JavaScript library for building user interfaces. You will learn about components, state management, props, and how to build and deploy a React application.",
-    "thumbnail": "https://via.placeholder.com/300x200?text=React+Thumbnail",
-    "instructor": "Jane Doe",
-    "instructorImage": "https://via.placeholder.com/100x100?text=Jane+Doe",
-    "price": 29.99,
-    "duration": "4 weeks",
+    "creationDate": "2022-01-01",
+    "title": "Introduction to Python Programming",
+    "description": "Learn the basics of Python programming, including data types, control structures, and functions. Perfect for beginners!",
+    "about": "This course is designed for those who are new to programming. You will learn Python from the ground up, covering fundamental concepts and syntax, enabling you to build simple applications and solve basic programming problems.",
+    "thumbnail": "https://via.placeholder.com/300x200?text=Python+Programming+Thumbnail",
+    "instructors": [
+      {
+        "name": "Alice Johnson",
+        "specialty": "Software Engineer",
+        "image": "https://via.placeholder.com/100x100?text=Alice+Johnson"
+      },
+      {
+        "name": "Bob Smith",
+        "specialty": "Data Scientist",
+        "image": "https://via.placeholder.com/100x100?text=Bob+Smith"
+      }
+    ],
+    "price": 49.99,
+    "duration": "6 weeks",
     "level": "Beginner",
-    "category": "Web Development",
-    "rating": 4.7,
-    "enrollment": 1500,
+    "category": "Programming",
+    "rating": 4.5,
+    "reviewsCount": 12,
+    "enrollment": 1200,
     "language": "English",
-    "requirements": ["Basic HTML/CSS knowledge", "JavaScript fundamentals"],
+    "requirements": ["No prior programming experience needed"],
     "certificate": true,
-    "lessons": 12
+    "lessons": 10,
+    "whatYouWillLearn": [
+      "Understand Python syntax and semantics.",
+      "Work with data types and structures.",
+      "Write functions and control structures.",
+      "Handle errors and exceptions."
+    ],
+    "weeklyLessons": [
+      {
+        "week": 1,
+        "summary": "Introduction to Python",
+        "lessons": [
+          { "title": "Introduction to Python", "duration": "45 minutes" },
+          { "title": "Setting Up the Environment", "duration": "30 minutes" },
+          { "title": "Basic Syntax", "duration": "1 hour" }
+        ]
+      },
+      {
+        "week": 2,
+        "summary": "Python Data Structures and Functions",
+        "lessons": [
+          { "title": "Data Types and Variables", "duration": "1 hour" },
+          { "title": "Control Structures", "duration": "45 minutes" },
+          { "title": "Functions", "duration": "1 hour 15 minutes" }
+        ]
+      },
+      {
+        "week": 3,
+        "summary": "Advanced Python Concepts",
+        "lessons": [
+          { "title": "Lists and Dictionaries", "duration": "1 hour" },
+          { "title": "Loops", "duration": "50 minutes" },
+          { "title": "Error Handling", "duration": "1 hour" }
+        ]
+      },
+      {
+        "week": 4,
+        "summary": "Python Libraries and File Handling",
+        "lessons": [
+          { "title": "File I/O", "duration": "1 hour 10 minutes" },
+          { "title": "Modules and Packages", "duration": "45 minutes" },
+          { "title": "Introduction to Libraries", "duration": "50 minutes" }
+        ]
+      },
+      {
+        "week": 5,
+        "summary": "Final Project Preparation",
+        "lessons": [
+          { "title": "Basic Data Visualization", "duration": "1 hour" },
+          { "title": "Working with APIs", "duration": "1 hour 15 minutes" },
+          { "title": "Final Project Planning", "duration": "1 hour 30 minutes" }
+        ]
+      },
+      {
+        "week": 6,
+        "summary": "Project Review and Next Steps",
+        "lessons": [
+          { "title": "Course Review", "duration": "45 minutes" },
+          { "title": "Final Project Presentation", "duration": "2 hours" },
+          { "title": "Next Steps in Learning Python", "duration": "30 minutes" }
+        ]
+      }
+    ]
   },
   {
     "id": 2,
-    "title": "Advanced JavaScript",
-    "description": "Explore advanced JavaScript concepts including closures, promises, async/await, and design patterns. This course is perfect for developers who want to deepen their understanding of JavaScript and improve their coding skills.",
-    "thumbnail": "https://via.placeholder.com/300x200?text=JavaScript+Thumbnail",
-    "instructor": "John Smith",
-    "instructorImage": "https://via.placeholder.com/100x100?text=John+Smith",
-    "price": 39.99,
-    "duration": "6 weeks",
+    "creationDate": "2022-04-01",
+    "title": "Web Development Bootcamp",
+    "description": "Become a web developer by learning HTML, CSS, JavaScript, and more. Build projects and gain hands-on experience.",
+    "about": "This bootcamp is tailored for aspiring web developers. You will learn essential web technologies and build real-world projects to strengthen your portfolio. Topics include responsive design, client-server architecture, and deploying web applications.",
+    "thumbnail": "https://via.placeholder.com/300x200?text=Web+Development+Thumbnail",
+    "instructors": [
+      {
+        "name": "Charlie Brown",
+        "specialty": "Web Developer",
+        "image": "https://via.placeholder.com/100x100?text=Charlie+Brown"
+      },
+      {
+        "name": "Diana Prince",
+        "specialty": "UX/UI Designer",
+        "image": "https://via.placeholder.com/100x100?text=Diana+Prince"
+      }
+    ],
+    "price": 99.99,
+    "duration": "12 weeks",
     "level": "Intermediate",
-    "category": "Programming",
-    "rating": 4.8,
-    "enrollment": 2200,
+    "category": "Web Development",
+    "rating": 3.7,
+    "reviewsCount": 6,
+    "enrollment": 850,
     "language": "English",
-    "requirements": ["Intermediate JavaScript knowledge"],
+    "requirements": ["Basic computer skills"],
     "certificate": true,
-    "lessons": 15
+    "lessons": 20,
+    "whatYouWillLearn": [
+      "Understand HTML, CSS, and JavaScript.",
+      "Build responsive websites.",
+      "Work with client-server architecture.",
+      "Deploy web applications to the cloud."
+    ],
+    "weeklyLessons": [
+      {
+        "week": 1,
+        "summary": "Introduction to Web Development",
+        "lessons": [
+          { "title": "HTML Basics", "duration": "1 hour" },
+          { "title": "CSS Fundamentals", "duration": "1 hour 30 minutes" },
+          { "title": "JavaScript Overview", "duration": "1 hour" }
+        ]
+      },
+      {
+        "week": 2,
+        "summary": "Responsive Design",
+        "lessons": [
+          { "title": "CSS Grid and Flexbox", "duration": "1 hour 15 minutes" },
+          { "title": "Media Queries", "duration": "45 minutes" },
+          { "title": "Responsive Layouts", "duration": "1 hour 10 minutes" }
+        ]
+      },
+      {
+        "week": 3,
+        "summary": "Advanced JavaScript",
+        "lessons": [
+          { "title": "JavaScript Functions and Scope", "duration": "1 hour" },
+          {
+            "title": "Asynchronous Programming",
+            "duration": "1 hour 20 minutes"
+          },
+          { "title": "Promises and Callbacks", "duration": "1 hour" }
+        ]
+      },
+      {
+        "week": 4,
+        "summary": "Client-Server Communication",
+        "lessons": [
+          { "title": "HTTP and APIs", "duration": "1 hour 15 minutes" },
+          { "title": "AJAX and Fetch", "duration": "1 hour" },
+          { "title": "Handling Responses", "duration": "45 minutes" }
+        ]
+      },
+      {
+        "week": 5,
+        "summary": "Web Application Development",
+        "lessons": [
+          { "title": "Node.js Introduction", "duration": "1 hour 10 minutes" },
+          { "title": "Express.js Basics", "duration": "1 hour" },
+          { "title": "Building RESTful APIs", "duration": "1 hour 30 minutes" }
+        ]
+      },
+      {
+        "week": 6,
+        "summary": "Deployment and Final Project",
+        "lessons": [
+          { "title": "Deploying to Heroku", "duration": "1 hour 20 minutes" },
+          { "title": "Managing Databases", "duration": "1 hour 15 minutes" },
+          { "title": "Final Project Development", "duration": "2 hours" }
+        ]
+      }
+    ]
   },
   {
     "id": 3,
-    "title": "CSS Flexbox and Grid",
-    "description": "Master modern CSS layout techniques with Flexbox and Grid. This course will teach you how to create responsive and visually appealing web layouts using these powerful CSS features.",
-    "thumbnail": "https://via.placeholder.com/300x200?text=CSS+Thumbnail",
-    "instructor": "Emily Davis",
-    "instructorImage": "https://via.placeholder.com/100x100?text=Emily+Davis",
-    "price": 19.99,
-    "duration": "3 weeks",
-    "level": "Beginner",
-    "category": "Web Design",
-    "rating": 4.6,
-    "enrollment": 1800,
+    "creationDate": "2022-05-01",
+    "title": "Data Science with R",
+    "description": "Dive into data science using R. Learn data manipulation, visualization, and statistical modeling.",
+    "about": "This course covers the key concepts of data science using R programming. You will learn how to analyze and visualize data, as well as apply statistical models to real-world problems.",
+    "thumbnail": "https://via.placeholder.com/300x200?text=Data+Science+Thumbnail",
+    "instructors": [
+      {
+        "name": "Edward Wilson",
+        "specialty": "Data Scientist",
+        "image": "https://via.placeholder.com/100x100?text=Edward+Wilson"
+      },
+      {
+        "name": "Fiona Green",
+        "specialty": "Statistician",
+        "image": "https://via.placeholder.com/100x100?text=Fiona+Green"
+      }
+    ],
+    "price": 69.99,
+    "duration": "8 weeks",
+    "level": "Intermediate",
+    "category": "Data Science",
+    "rating": 4.9,
+    "reviewsCount": 25,
+    "enrollment": 950,
     "language": "English",
-    "requirements": ["Basic HTML/CSS knowledge"],
-    "certificate": false,
-    "lessons": 8
+    "requirements": ["Basic understanding of statistics"],
+    "certificate": true,
+    "lessons": 12,
+    "whatYouWillLearn": [
+      "Perform data manipulation in R.",
+      "Create visualizations for data analysis.",
+      "Apply statistical models to data.",
+      "Work with real-world datasets."
+    ],
+    "weeklyLessons": [
+      {
+        "week": 1,
+        "summary": "Introduction to Data Science",
+        "lessons": [
+          { "title": "Introduction to Data Science", "duration": "45 minutes" },
+          { "title": "Setting Up R Environment", "duration": "30 minutes" },
+          { "title": "Basic Data Types in R", "duration": "1 hour" }
+        ]
+      },
+      {
+        "week": 2,
+        "summary": "Data Manipulation",
+        "lessons": [
+          { "title": "Data Frames in R", "duration": "1 hour" },
+          { "title": "Working with dplyr", "duration": "45 minutes" },
+          {
+            "title": "Data Cleaning Techniques",
+            "duration": "1 hour 15 minutes"
+          }
+        ]
+      },
+      {
+        "week": 3,
+        "summary": "Data Visualization",
+        "lessons": [
+          { "title": "Introduction to ggplot2", "duration": "1 hour" },
+          { "title": "Visualizing Data with Plots", "duration": "50 minutes" },
+          { "title": "Advanced Plot Customization", "duration": "1 hour" }
+        ]
+      },
+      {
+        "week": 4,
+        "summary": "Statistical Modeling",
+        "lessons": [
+          {
+            "title": "Linear Regression in R",
+            "duration": "1 hour 10 minutes"
+          },
+          {
+            "title": "Working with Logistic Regression",
+            "duration": "45 minutes"
+          },
+          { "title": "Evaluating Model Performance", "duration": "50 minutes" }
+        ]
+      },
+      {
+        "week": 5,
+        "summary": "Final Project Preparation",
+        "lessons": [
+          { "title": "Working with Real-World Data", "duration": "1 hour" },
+          {
+            "title": "Exploratory Data Analysis (EDA)",
+            "duration": "1 hour 15 minutes"
+          },
+          { "title": "Final Project Planning", "duration": "1 hour 30 minutes" }
+        ]
+      },
+      {
+        "week": 6,
+        "summary": "Project Review and Next Steps",
+        "lessons": [
+          { "title": "Course Review", "duration": "45 minutes" },
+          { "title": "Final Project Presentation", "duration": "2 hours" },
+          { "title": "Next Steps in Data Science", "duration": "30 minutes" }
+        ]
+      }
+    ]
   },
   {
     "id": 4,
-    "title": "Full-Stack Web Development",
-    "description": "Learn how to build full-stack web applications from scratch with this comprehensive course. Covering both frontend and backend development, you will gain the skills needed to develop and deploy complete web solutions.",
-    "thumbnail": "https://via.placeholder.com/300x200?text=Full-Stack+Thumbnail",
-    "instructor": "Michael Brown",
-    "instructorImage": "https://via.placeholder.com/100x100?text=Michael+Brown",
-    "price": 49.99,
-    "duration": "8 weeks",
+    "creationDate": "2023-02-10",
+    "title": "Machine Learning Fundamentals",
+    "description": "Master the basics of machine learning algorithms, data preparation, and model evaluation with hands-on projects.",
+    "about": "This course will guide you through the core principles of machine learning, including data preprocessing, supervised and unsupervised learning, and model evaluation techniques. It's ideal for anyone looking to break into the world of AI and machine learning.",
+    "thumbnail": "https://via.placeholder.com/300x200?text=Machine+Learning+Thumbnail",
+    "instructors": [
+      {
+        "name": "Grace Hopper",
+        "specialty": "AI Researcher",
+        "image": "https://via.placeholder.com/100x100?text=Grace+Hopper"
+      }
+    ],
+    "price": 89.99,
+    "duration": "10 weeks",
     "level": "Advanced",
-    "category": "Full-Stack Development",
-    "rating": 4.9,
-    "enrollment": 2500,
+    "category": "Artificial Intelligence",
+    "rating": 4.8,
+    "reviewsCount": 45,
+    "enrollment": 2000,
     "language": "English",
-    "requirements": ["Basic HTML/CSS/JavaScript knowledge"],
+    "requirements": ["Basic knowledge of Python and statistics"],
     "certificate": true,
-    "lessons": 20
+    "lessons": 14,
+    "whatYouWillLearn": [
+      "Understand machine learning algorithms.",
+      "Preprocess and clean data.",
+      "Build and evaluate predictive models.",
+      "Work with supervised and unsupervised learning techniques."
+    ],
+    "weeklyLessons": [
+      {
+        "week": 1,
+        "summary": "Introduction to Machine Learning",
+        "lessons": [
+          { "title": "What is Machine Learning?", "duration": "45 minutes" },
+          {
+            "title": "Supervised vs Unsupervised Learning",
+            "duration": "1 hour"
+          }
+        ]
+      },
+      {
+        "week": 2,
+        "summary": "Data Preprocessing",
+        "lessons": [
+          { "title": "Cleaning Data", "duration": "1 hour" },
+          { "title": "Handling Missing Values", "duration": "50 minutes" }
+        ]
+      },
+      {
+        "week": 3,
+        "summary": "Supervised Learning",
+        "lessons": [
+          { "title": "Regression Models", "duration": "1 hour" },
+          { "title": "Classification Models", "duration": "1 hour" }
+        ]
+      },
+      {
+        "week": 4,
+        "summary": "Unsupervised Learning",
+        "lessons": [
+          { "title": "Clustering", "duration": "1 hour" },
+          { "title": "Dimensionality Reduction", "duration": "1 hour" }
+        ]
+      },
+      {
+        "week": 5,
+        "summary": "Model Evaluation",
+        "lessons": [
+          { "title": "Confusion Matrix", "duration": "45 minutes" },
+          { "title": "Cross-Validation", "duration": "50 minutes" }
+        ]
+      },
+      {
+        "week": 6,
+        "summary": "Final Project",
+        "lessons": [
+          { "title": "Preparing Your Dataset", "duration": "1 hour" },
+          { "title": "Building Your Model", "duration": "1 hour 15 minutes" }
+        ]
+      }
+    ]
   },
   {
     "id": 5,
-    "title": "Python for Data Science",
-    "description": "Get hands-on experience with Python programming and its applications in data science. This course covers data manipulation, visualization, and basic machine learning techniques using Python.",
-    "thumbnail": "https://via.placeholder.com/300x200?text=Python+Thumbnail",
-    "instructor": "Alice Johnson",
-    "instructorImage": "https://via.placeholder.com/100x100?text=Alice+Johnson",
-    "price": 34.99,
-    "duration": "5 weeks",
+    "creationDate": "2023-03-15",
+    "title": "Digital Marketing Mastery",
+    "description": "Learn all about digital marketing strategies, from SEO and content marketing to paid ads and analytics.",
+    "about": "This course offers a comprehensive guide to digital marketing. From creating content that converts to leveraging paid ads on platforms like Google and Facebook, you’ll learn all the skills needed to grow any business online.",
+    "thumbnail": "https://via.placeholder.com/300x200?text=Digital+Marketing+Thumbnail",
+    "instructors": [
+      {
+        "name": "Helen Morris",
+        "specialty": "Marketing Strategist",
+        "image": "https://via.placeholder.com/100x100?text=Helen+Morris"
+      }
+    ],
+    "price": 79.99,
+    "duration": "8 weeks",
     "level": "Intermediate",
-    "category": "Data Science",
-    "rating": 4.7,
-    "enrollment": 2000,
+    "category": "Marketing",
+    "rating": 4.6,
+    "reviewsCount": 22,
+    "enrollment": 1750,
     "language": "English",
-    "requirements": ["Basic Python knowledge"],
+    "requirements": ["Basic understanding of business and marketing"],
     "certificate": true,
-    "lessons": 14
+    "lessons": 12,
+    "whatYouWillLearn": [
+      "Master SEO and content marketing strategies.",
+      "Design and execute paid ad campaigns.",
+      "Understand analytics and conversion tracking.",
+      "Leverage social media for business growth."
+    ],
+    "weeklyLessons": [
+      {
+        "week": 1,
+        "summary": "Introduction to Digital Marketing",
+        "lessons": [
+          { "title": "What is Digital Marketing?", "duration": "45 minutes" },
+          { "title": "The Marketing Funnel", "duration": "1 hour" }
+        ]
+      },
+      {
+        "week": 2,
+        "summary": "SEO Strategies",
+        "lessons": [
+          { "title": "Keyword Research", "duration": "1 hour" },
+          { "title": "On-Page and Off-Page SEO", "duration": "50 minutes" }
+        ]
+      },
+      {
+        "week": 3,
+        "summary": "Content Marketing",
+        "lessons": [
+          { "title": "Creating Engaging Content", "duration": "1 hour" },
+          { "title": "Content Distribution", "duration": "50 minutes" }
+        ]
+      },
+      {
+        "week": 4,
+        "summary": "Paid Advertising",
+        "lessons": [
+          { "title": "Introduction to Google Ads", "duration": "1 hour" },
+          { "title": "Facebook Ad Campaigns", "duration": "1 hour 10 minutes" }
+        ]
+      },
+      {
+        "week": 5,
+        "summary": "Analyzing and Optimizing Campaigns",
+        "lessons": [
+          { "title": "Using Google Analytics", "duration": "45 minutes" },
+          { "title": "Conversion Rate Optimization", "duration": "50 minutes" }
+        ]
+      },
+      {
+        "week": 6,
+        "summary": "Final Project",
+        "lessons": [
+          { "title": "Designing a Marketing Campaign", "duration": "1 hour" },
+          { "title": "Analyzing Your Results", "duration": "1 hour 15 minutes" }
+        ]
+      }
+    ]
   },
   {
     "id": 6,
-    "title": "Introduction to Node.js",
-    "description": "Learn the fundamentals of Node.js, including server-side programming, asynchronous JavaScript, and building RESTful APIs. This course is ideal for JavaScript developers looking to expand their backend skills.",
-    "thumbnail": "https://via.placeholder.com/300x200?text=Node.js+Thumbnail",
-    "instructor": "Chris Williams",
-    "instructorImage": "https://via.placeholder.com/100x100?text=Chris+Williams",
-    "price": 24.99,
-    "duration": "4 weeks",
+    "creationDate": "2023-05-20",
+    "title": "Graphic Design Essentials",
+    "description": "Learn the principles of graphic design and how to use design tools like Photoshop and Illustrator.",
+    "about": "In this course, you'll dive into the world of graphic design. You’ll learn the elements of design, how to create stunning visuals, and work with popular design software like Adobe Photoshop and Illustrator.",
+    "thumbnail": "https://via.placeholder.com/300x200?text=Graphic+Design+Thumbnail",
+    "instructors": [
+      {
+        "name": "Ian Taylor",
+        "specialty": "Graphic Designer",
+        "image": "https://via.placeholder.com/100x100?text=Ian+Taylor"
+      }
+    ],
+    "price": 59.99,
+    "duration": "6 weeks",
     "level": "Beginner",
-    "category": "Backend Development",
-    "rating": 4.5,
-    "enrollment": 1700,
+    "category": "Design",
+    "rating": 4.3,
+    "reviewsCount": 18,
+    "enrollment": 1300,
     "language": "English",
-    "requirements": ["Basic JavaScript knowledge"],
+    "requirements": ["No prior design experience needed"],
     "certificate": true,
-    "lessons": 10
+    "lessons": 10,
+    "whatYouWillLearn": [
+      "Understand the basics of design theory.",
+      "Create professional-quality visuals.",
+      "Use Adobe Photoshop and Illustrator.",
+      "Apply design principles in real-world projects."
+    ],
+    "weeklyLessons": [
+      {
+        "week": 1,
+        "summary": "Introduction to Graphic Design",
+        "lessons": [
+          { "title": "Design Principles", "duration": "45 minutes" },
+          { "title": "Elements of Design", "duration": "1 hour" }
+        ]
+      },
+      {
+        "week": 2,
+        "summary": "Photoshop Basics",
+        "lessons": [
+          { "title": "Getting Started with Photoshop", "duration": "1 hour" },
+          { "title": "Editing Images", "duration": "50 minutes" }
+        ]
+      },
+      {
+        "week": 3,
+        "summary": "Illustrator Basics",
+        "lessons": [
+          { "title": "Working with Vectors", "duration": "1 hour" },
+          { "title": "Creating Logos and Icons", "duration": "50 minutes" }
+        ]
+      },
+      {
+        "week": 4,
+        "summary": "Typography",
+        "lessons": [
+          { "title": "Understanding Typography", "duration": "45 minutes" },
+          { "title": "Choosing Fonts", "duration": "50 minutes" }
+        ]
+      },
+      {
+        "week": 5,
+        "summary": "Design Projects",
+        "lessons": [
+          { "title": "Creating Marketing Materials", "duration": "1 hour" },
+          { "title": "Web Design Basics", "duration": "1 hour" }
+        ]
+      },
+      {
+        "week": 6,
+        "summary": "Final Project",
+        "lessons": [
+          { "title": "Design Your Portfolio", "duration": "1 hour" },
+          {
+            "title": "Final Design Presentation",
+            "duration": "1 hour 15 minutes"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": 7,
-    "title": "UI/UX Design Basics",
-    "description": "This course introduces the principles of UI/UX design, including user research, wireframing, prototyping, and usability testing. Perfect for those looking to start a career in design or improve their design skills.",
-    "thumbnail": "https://via.placeholder.com/300x200?text=UIUX+Thumbnail",
-    "instructor": "Sarah Lee",
-    "instructorImage": "https://via.placeholder.com/100x100?text=Sarah+Lee",
-    "price": 27.99,
-    "duration": "3 weeks",
+    "creationDate": "2023-07-05",
+    "title": "Cybersecurity for Beginners",
+    "description": "Explore the world of cybersecurity, including network security, ethical hacking, and data protection.",
+    "about": "This course covers the fundamental concepts of cybersecurity, from protecting networks to ethical hacking techniques. It's perfect for beginners who want to learn how to secure systems and data in today's digital world.",
+    "thumbnail": "https://via.placeholder.com/300x200?text=Cybersecurity+Thumbnail",
+    "instructors": [
+      {
+        "name": "Eva Richardson",
+        "specialty": "Cybersecurity Analyst",
+        "image": "https://via.placeholder.com/100x100?text=Eva+Richardson"
+      }
+    ],
+    "price": 99.99,
+    "duration": "8 weeks",
     "level": "Beginner",
-    "category": "Design",
-    "rating": 4.6,
-    "enrollment": 1600,
+    "category": "IT & Software",
+    "rating": 4.7,
+    "reviewsCount": 37,
+    "enrollment": 2500,
     "language": "English",
-    "requirements": ["No prior design experience needed"],
-    "certificate": false,
-    "lessons": 9
+    "requirements": ["Basic understanding of computer systems"],
+    "certificate": true,
+    "lessons": 14,
+    "whatYouWillLearn": [
+      "Understand network security fundamentals.",
+      "Learn ethical hacking basics.",
+      "Protect data and systems from cyber threats.",
+      "Explore real-world cybersecurity scenarios."
+    ],
+    "weeklyLessons": [
+      {
+        "week": 1,
+        "summary": "Introduction to Cybersecurity",
+        "lessons": [
+          { "title": "What is Cybersecurity?", "duration": "45 minutes" },
+          { "title": "Types of Cyber Threats", "duration": "1 hour" }
+        ]
+      },
+      {
+        "week": 2,
+        "summary": "Network Security",
+        "lessons": [
+          { "title": "Network Security Basics", "duration": "1 hour" },
+          { "title": "Firewall Protection", "duration": "50 minutes" }
+        ]
+      },
+      {
+        "week": 3,
+        "summary": "Ethical Hacking",
+        "lessons": [
+          { "title": "Introduction to Ethical Hacking", "duration": "1 hour" },
+          { "title": "Penetration Testing", "duration": "50 minutes" }
+        ]
+      },
+      {
+        "week": 4,
+        "summary": "Data Protection",
+        "lessons": [
+          { "title": "Encrypting Data", "duration": "45 minutes" },
+          { "title": "Backing Up Data Securely", "duration": "50 minutes" }
+        ]
+      },
+      {
+        "week": 5,
+        "summary": "Real-World Cybersecurity",
+        "lessons": [
+          { "title": "Responding to Cyber Attacks", "duration": "1 hour" },
+          { "title": "Cybersecurity Case Studies", "duration": "50 minutes" }
+        ]
+      },
+      {
+        "week": 6,
+        "summary": "Final Project",
+        "lessons": [
+          { "title": "Security Assessment Project", "duration": "1 hour" },
+          { "title": "Final Presentation", "duration": "1 hour 15 minutes" }
+        ]
+      }
+    ]
   },
   {
     "id": 8,
-    "title": "Java for Beginners",
-    "description": "An introductory course to Java programming language. This course covers the basics of Java, including syntax, control structures, and object-oriented programming principles.",
-    "thumbnail": "https://via.placeholder.com/300x200?text=Java+Thumbnail",
-    "instructor": "David Wilson",
-    "instructorImage": "https://via.placeholder.com/100x100?text=David+Wilson",
-    "price": 29.99,
-    "duration": "6 weeks",
-    "level": "Beginner",
-    "category": "Programming",
-    "rating": 4.4,
-    "enrollment": 1400,
-    "language": "English",
-    "requirements": ["Basic programming knowledge"],
-    "certificate": true,
-    "lessons": 13
-  },
-  {
-    "id": 9,
-    "title": "Data Visualization with D3.js",
-    "description": "Learn how to create dynamic and interactive data visualizations using D3.js. This course covers the fundamentals of D3.js and how to use it to build data-driven graphics.",
-    "thumbnail": "https://via.placeholder.com/300x200?text=D3.js+Thumbnail",
-    "instructor": "Laura Martinez",
-    "instructorImage": "https://via.placeholder.com/100x100?text=Laura+Martinez",
-    "price": 44.99,
-    "duration": "5 weeks",
-    "level": "Intermediate",
-    "category": "Data Visualization",
-    "rating": 4.7,
-    "enrollment": 1300,
-    "language": "English",
-    "requirements": ["Basic knowledge of HTML, CSS, and JavaScript"],
-    "certificate": false,
-    "lessons": 11
-  },
-  {
-    "id": 10,
-    "title": "Machine Learning with Python",
-    "description": "An in-depth course covering the principles of machine learning using Python. Topics include supervised and unsupervised learning, data preprocessing, and model evaluation.",
-    "thumbnail": "https://via.placeholder.com/300x200?text=Machine+Learning+Thumbnail",
-    "instructor": "Tom Green",
-    "instructorImage": "https://via.placeholder.com/100x100?text=Tom+Green",
-    "price": 54.99,
-    "duration": "7 weeks",
+    "creationDate": "2023-08-18",
+    "title": "Data Science Bootcamp",
+    "description": "A comprehensive data science course covering Python, data analysis, machine learning, and more.",
+    "about": "This bootcamp provides an immersive experience into the world of data science, equipping you with the skills to analyze data, build models, and use machine learning algorithms. With hands-on projects and real-world applications, you'll be ready to work with data effectively.",
+    "thumbnail": "https://via.placeholder.com/300x200?text=Data+Science+Thumbnail",
+    "instructors": [
+      {
+        "name": "Sarah Blake",
+        "specialty": "Data Scientist",
+        "image": "https://via.placeholder.com/100x100?text=Sarah+Blake"
+      }
+    ],
+    "price": 129.99,
+    "duration": "12 weeks",
     "level": "Advanced",
     "category": "Data Science",
     "rating": 4.9,
-    "enrollment": 1900,
+    "reviewsCount": 67,
+    "enrollment": 3000,
     "language": "English",
-    "requirements": ["Basic Python knowledge", "Statistics fundamentals"],
+    "requirements": ["Basic knowledge of Python and statistics"],
     "certificate": true,
-    "lessons": 18
+    "lessons": 20,
+    "whatYouWillLearn": [
+      "Master data analysis techniques using Python.",
+      "Use popular libraries like NumPy and Pandas.",
+      "Build machine learning models.",
+      "Handle real-world data projects."
+    ],
+    "weeklyLessons": [
+      {
+        "week": 1,
+        "summary": "Introduction to Data Science",
+        "lessons": [
+          { "title": "What is Data Science?", "duration": "45 minutes" },
+          {
+            "title": "Setting up Python for Data Science",
+            "duration": "1 hour"
+          }
+        ]
+      },
+      {
+        "week": 2,
+        "summary": "Data Analysis with Pandas",
+        "lessons": [
+          { "title": "Data Manipulation", "duration": "1 hour" },
+          { "title": "Exploratory Data Analysis", "duration": "50 minutes" }
+        ]
+      },
+      {
+        "week": 3,
+        "summary": "Data Visualization",
+        "lessons": [
+          { "title": "Introduction to Matplotlib", "duration": "1 hour" },
+          { "title": "Creating Data Visualizations", "duration": "50 minutes" }
+        ]
+      },
+      {
+        "week": 4,
+        "summary": "Machine Learning Basics",
+        "lessons": [
+          { "title": "Understanding Algorithms", "duration": "45 minutes" },
+          { "title": "Linear Regression", "duration": "1 hour" }
+        ]
+      },
+      {
+        "week": 5,
+        "summary": "Advanced Machine Learning",
+        "lessons": [
+          { "title": "Decision Trees", "duration": "50 minutes" },
+          { "title": "Random Forest", "duration": "1 hour" }
+        ]
+      },
+      {
+        "week": 6,
+        "summary": "Final Data Science Project",
+        "lessons": [
+          { "title": "Preparing Your Dataset", "duration": "1 hour" },
+          {
+            "title": "Building and Evaluating Models",
+            "duration": "1 hour 15 minutes"
+          }
+        ]
+      }
+    ]
   },
   {
-    "id": 11,
-    "title": "Web Security Essentials",
-    "description": "Learn about the fundamental concepts of web security, including encryption, authentication, and secure coding practices. This course is essential for developers who want to build secure web applications.",
-    "thumbnail": "https://via.placeholder.com/300x200?text=Security+Thumbnail",
-    "instructor": "Linda Clarke",
-    "instructorImage": "https://via.placeholder.com/100x100?text=Linda+Clarke",
-    "price": 34.99,
-    "duration": "4 weeks",
+    "id": 9,
+    "creationDate": "2023-09-12",
+    "title": "Mobile App Development",
+    "description": "Learn how to build mobile applications for iOS and Android using Flutter and Dart.",
+    "about": "This course introduces you to mobile app development using the Flutter framework and Dart programming language. You’ll learn how to design, develop, and deploy high-quality mobile applications that work across multiple platforms.",
+    "thumbnail": "https://via.placeholder.com/300x200?text=Mobile+App+Development+Thumbnail",
+    "instructors": [
+      {
+        "name": "Liam Johnson",
+        "specialty": "Mobile Developer",
+        "image": "https://via.placeholder.com/100x100?text=Liam+Johnson"
+      }
+    ],
+    "price": 119.99,
+    "duration": "10 weeks",
     "level": "Intermediate",
-    "category": "Security",
-    "rating": 4.6,
-    "enrollment": 1200,
-    "language": "English",
-    "requirements": ["Basic knowledge of web development"],
-    "certificate": true,
-    "lessons": 12
-  },
-  {
-    "id": 12,
-    "title": "Digital Marketing Strategies",
-    "description": "Explore the fundamentals of digital marketing, including SEO, social media marketing, content creation, and analytics. This course is designed for those looking to enhance their marketing skills and strategies.",
-    "thumbnail": "https://via.placeholder.com/300x200?text=Marketing+Thumbnail",
-    "instructor": "Nancy Wilson",
-    "instructorImage": "https://via.placeholder.com/100x100?text=Nancy+Wilson",
-    "price": 29.99,
-    "duration": "5 weeks",
-    "level": "Beginner",
-    "category": "Marketing",
-    "rating": 4.5,
-    "enrollment": 1400,
-    "language": "English",
-    "requirements": ["No prior marketing experience needed"],
-    "certificate": false,
-    "lessons": 10
-  },
-  {
-    "id": 13,
-    "title": "Introduction to Cloud Computing",
-    "description": "Gain an understanding of cloud computing concepts and services, including IaaS, PaaS, and SaaS. This course provides practical knowledge of cloud platforms and deployment strategies.",
-    "thumbnail": "https://via.placeholder.com/300x200?text=Cloud+Computing+Thumbnail",
-    "instructor": "Eric Adams",
-    "instructorImage": "https://via.placeholder.com/100x100?text=Eric+Adams",
-    "price": 39.99,
-    "duration": "6 weeks",
-    "level": "Intermediate",
-    "category": "Cloud Computing",
+    "category": "Development",
     "rating": 4.7,
-    "enrollment": 1600,
-    "language": "English",
-    "requirements": ["Basic understanding of IT concepts"],
-    "certificate": true,
-    "lessons": 14
-  },
-  {
-    "id": 14,
-    "title": "Introduction to SQL Databases",
-    "description": "Learn the basics of SQL and relational databases. This course covers SQL syntax, queries, joins, and database design principles.",
-    "thumbnail": "https://via.placeholder.com/300x200?text=SQL+Thumbnail",
-    "instructor": "Jessica Taylor",
-    "instructorImage": "https://via.placeholder.com/100x100?text=Jessica+Taylor",
-    "price": 24.99,
-    "duration": "4 weeks",
-    "level": "Beginner",
-    "category": "Database",
-    "rating": 4.4,
-    "enrollment": 1300,
-    "language": "English",
-    "requirements": ["No prior database knowledge required"],
-    "certificate": true,
-    "lessons": 11
-  },
-  {
-    "id": 15,
-    "title": "Game Development with Unity",
-    "description": "Learn game development using Unity, a powerful game engine. This course covers game design principles, C# scripting, and building and publishing your own games.",
-    "thumbnail": "https://via.placeholder.com/300x200?text=Unity+Thumbnail",
-    "instructor": "Robert Thompson",
-    "instructorImage": "https://via.placeholder.com/100x100?text=Robert+Thompson",
-    "price": 49.99,
-    "duration": "7 weeks",
-    "level": "Intermediate",  
-    "category": "Game Development",
-    "rating": 4.8,
+    "reviewsCount": 31,
     "enrollment": 1800,
     "language": "English",
     "requirements": ["Basic programming knowledge"],
     "certificate": true,
-    "lessons": 16
+    "lessons": 18,
+    "whatYouWillLearn": [
+      "Build mobile apps using Flutter.",
+      "Understand Dart programming.",
+      "Design responsive UIs.",
+      "Deploy apps to iOS and Android platforms."
+    ],
+    "weeklyLessons": [
+      {
+        "week": 1,
+        "summary": "Introduction to Flutter and Dart",
+        "lessons": [
+          { "title": "Setting up Flutter", "duration": "45 minutes" },
+          { "title": "Basic Dart Programming", "duration": "1 hour" }
+        ]
+      },
+      {
+        "week": 2,
+        "summary": "Building UIs in Flutter",
+        "lessons": [
+          { "title": "Introduction to Widgets", "duration": "1 hour" },
+          { "title": "Layout and Navigation", "duration": "50 minutes" }
+        ]
+      },
+      {
+        "week": 3,
+        "summary": "State Management",
+        "lessons": [
+          { "title": "Understanding State in Flutter", "duration": "1 hour" },
+          {
+            "title": "Using Providers for State Management",
+            "duration": "50 minutes"
+          }
+        ]
+      },
+      {
+        "week": 4,
+        "summary": "Data Persistence",
+        "lessons": [
+          { "title": "Storing Data Locally", "duration": "45 minutes" },
+          { "title": "Working with Databases", "duration": "1 hour" }
+        ]
+      },
+      {
+        "week": 5,
+        "summary": "Publishing Apps",
+        "lessons": [
+          {
+            "title": "Preparing for App Store and Google Play",
+            "duration": "50 minutes"
+          },
+          { "title": "Deploying Your App", "duration": "1 hour" }
+        ]
+      },
+      {
+        "week": 6,
+        "summary": "Final Project",
+        "lessons": [
+          { "title": "Building Your App", "duration": "1 hour" },
+          {
+            "title": "App Testing and Final Submission",
+            "duration": "1 hour 15 minutes"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "creationDate": "2023-10-01",
+    "title": "Blockchain and Cryptocurrency",
+    "description": "An introduction to blockchain technology, cryptocurrencies, and decentralized applications (dApps).",
+    "about": "This course offers an in-depth exploration of blockchain technology and cryptocurrencies. You'll learn how blockchain works, understand the fundamentals of Bitcoin and Ethereum, and discover how to create decentralized applications (dApps).",
+    "thumbnail": "https://via.placeholder.com/300x200?text=Blockchain+Thumbnail",
+    "instructors": [
+      {
+        "name": "Maya Patel",
+        "specialty": "Blockchain Expert",
+        "image": "https://via.placeholder.com/100x100?text=Maya+Patel"
+      }
+    ],
+    "price": 139.99,
+    "duration": "8 weeks",
+    "level": "Intermediate",
+    "category": "Blockchain",
+    "rating": 4.8,
+    "reviewsCount": 40,
+    "enrollment": 2100,
+    "language": "English",
+    "requirements": ["Basic understanding of programming and networking"],
+    "certificate": true,
+    "lessons": 16,
+    "whatYouWillLearn": [
+      "Understand how blockchain technology works.",
+      "Learn about cryptocurrencies and decentralized finance.",
+      "Build decentralized applications (dApps).",
+      "Explore smart contracts on Ethereum."
+    ],
+    "weeklyLessons": [
+      {
+        "week": 1,
+        "summary": "Introduction to Blockchain",
+        "lessons": [
+          { "title": "Blockchain Basics", "duration": "45 minutes" },
+          {
+            "title": "How Cryptography Powers Blockchain",
+            "duration": "1 hour"
+          }
+        ]
+      },
+      {
+        "week": 2,
+        "summary": "Bitcoin and Cryptocurrency",
+        "lessons": [
+          { "title": "Introduction to Bitcoin", "duration": "1 hour" },
+          { "title": "Mining and Transactions", "duration": "50 minutes" }
+        ]
+      },
+      {
+        "week": 3,
+        "summary": "Ethereum and Smart Contracts",
+        "lessons": [
+          { "title": "What is Ethereum?", "duration": "1 hour" },
+          { "title": "Creating Smart Contracts", "duration": "50 minutes" }
+        ]
+      },
+      {
+        "week": 4,
+        "summary": "Decentralized Applications (dApps)",
+        "lessons": [
+          { "title": "Building dApps", "duration": "45 minutes" },
+          { "title": "Deploying Your First dApp", "duration": "1 hour" }
+        ]
+      },
+      {
+        "week": 5,
+        "summary": "Blockchain Use Cases",
+        "lessons": [
+          { "title": "Blockchain in Finance", "duration": "50 minutes" },
+          { "title": "Blockchain Beyond Finance", "duration": "1 hour" }
+        ]
+      },
+      {
+        "week": 6,
+        "summary": "Final Project",
+        "lessons": [
+          { "title": "Building a dApp", "duration": "1 hour" },
+          {
+            "title": "Final Presentation and Submission",
+            "duration": "1 hour 15 minutes"
+          }
+        ]
+      }
+    ]
   }
 ]

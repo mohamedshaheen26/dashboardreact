@@ -1,0 +1,197 @@
+.content-wrapper {
+  margin: 0 20px 20px;
+  padding-top: 20px;
+}
+
+.course-details {
+  flex: 2 1 100%;
+}
+
+.course-info {
+  flex: 2;
+}
+
+.course-rating .stars {
+  color: #ffa500;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.enroll-now {
+  flex: 1;
+  margin-top: 20px;
+}
+
+.enroll-btn {
+  padding: 10px 50px;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.enroll-btn:hover {
+  background: var(--blue-alt-color);
+}
+
+.main-content {
+  margin-right: 30px;
+  flex: 1 1 40%;
+  padding: 20px 50px;
+}
+
+.main-content h3 {
+  font-size: 30px;
+}
+
+.what-learn ul {
+  padding: 0 30px;
+  list-style: disc;
+}
+
+.instructor {
+  width: 200px;
+  margin: 0 25px;
+}
+
+.instructor-info p {
+  line-height: 1.8;
+}
+
+.course-informations {
+  flex: 1;
+}
+
+.course-informations .details {
+  margin-bottom: 30px;
+}
+
+.details-list li {
+  margin: 10px 0;
+}
+
+.details-list i {
+  width: 10px;
+  height: 10px;
+  margin-right: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.social-icons a {
+  text-decoration: none;
+  font-size: 24px; /* Adjust size as needed */
+}
+
+.facebook {
+  color: #3b5998; /* Facebook blue */
+}
+.twitter {
+  color: #1da1f2; /* Twitter blue */
+}
+.instagram {
+  color: #c13584; /* Instagram pink */
+}
+.linkedin {
+  color: #0077b5; /* LinkedIn blue */
+}
+.github {
+  color: #333; /* GitHub gray */
+}
+/* Change to main color on hover */
+.social-icons a:hover {
+  opacity: 0.8; /* Main color on hover */
+}
+
+.week-summary {
+  margin-bottom: 20px;
+}
+
+.week-summary h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.week-summary ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.week-summary ul li {
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+.custom-accordion {
+  width: 100%;
+}
+
+.accordion-item {
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.accordion-header {
+  padding: 6px 10px;
+  background-color: #f7f9fa;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-header i {
+  margin: 0 30px;
+}
+
+.accordion-header:hover {
+  background-color: #e9ecef;
+}
+
+.accordion-content {
+  background-color: #ffffff;
+}
+
+.accordion-content ul {
+  margin: 0;
+}
+
+.accordion-content ul li {
+  padding: 10px 20px;
+}
+
+.accordion-content ul li:hover {
+  background-color: #f6f6f6;
+}
+
+@media (max-width: 1024px) {
+  .enroll-btn {
+    padding: 10px;
+  }
+  .main-content {
+    margin-right: 0;
+    margin-bottom: 20px;
+    padding: 0 25px 25px;
+    width: 100%;
+  }
+  .accordion-header {
+    font-size: 14px;
+  }
+  .accordion-content ul {
+    font-size: 12px;
+  }
+
+  .course-details {
+    flex-direction: column;
+    margin-bottom: 20px;
+    gap: 0;
+  }
+  .accordion-header i {
+    margin: 0 10px;
+  }
+  .accordion-header span {
+    font-size: 12px;
+  }
+}

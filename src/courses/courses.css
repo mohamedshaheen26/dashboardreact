@@ -37,7 +37,7 @@
   border-top: 1px solid #eee;
 }
 
-.courses .info button {
+.courses .info .link-course {
   position: absolute;
   bottom: 38px;
   right: 50%;

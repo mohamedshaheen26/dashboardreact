@@ -282,6 +282,9 @@ body {
 .mr-15 {
   margin-right: 15px;
 }
+.mr-20 {
+  margin-right: 20px;
+}
 .mb-5 {
   margin-bottom: 5px;
 }
@@ -404,6 +407,9 @@ body {
 }
 .rad-10 {
   border-radius: 10px;
+}
+.rad-circle {
+  border-radius: 50%;
 }
 .border-ccc {
   border: 1px solid #ccc;
@@ -655,6 +661,23 @@ body {
   background-color: #2c2c2c;
 }
 
+.dark-mode .course-details + .main-content {
+  background-color: #2c2c2c;
+}
+
+.dark-mode .accordion-header,
+.dark-mode .accordion-content {
+  background-color: #404040;
+}
+
+.dark-mode .accordion-header:hover {
+  background-color: #515151;
+}
+
+.dark-mode .course-informations .details {
+  background-color: #2c2c2c;
+}
+
 .dark-mode .friends .box {
   background-color: #2c2c2c;
 }
@@ -733,7 +756,6 @@ body {
     scrollbar-color: #555 #333;
   }
 }
-
 
 .spinner-container {
   display: flex;

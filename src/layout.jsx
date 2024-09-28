@@ -1,18 +1,19 @@
-import React, { Routes, Route, useLocation } from 'react-router-dom';
-import { useState } from 'react';
+import React, { Routes, Route, useLocation } from "react-router-dom";
+import { useState } from "react";
 
-import Sidebar from './sidebar/sidebar';
-import Header from './header/header';
-import Home from './home/home';
-import Settings from './settings/settings';
-import Profile from './profile/profile';
-import Projects from './projects/projects';
-import Courses from './courses/courses';
-import Friends from './friends/friends';
-import Files from './files/files';
-import Plans from './plans/plans';
-import Drafts from './drafts/drafts';
-import NotFound from './notFound';
+import Sidebar from "./sidebar/sidebar";
+import Header from "./header/header";
+import Home from "./home/home";
+import Settings from "./settings/settings";
+import Profile from "./profile/profile";
+import Projects from "./projects/projects";
+import Courses from "./courses/courses";
+import CourseDetails from "./courses/courseDetails";
+import Friends from "./friends/friends";
+import Files from "./files/files";
+import Plans from "./plans/plans";
+import Drafts from "./drafts/drafts";
+import NotFound from "./notFound";
 
 const Layout = ({ toggleDarkMode, darkMode }) => {
   const location = useLocation();
@@ -40,7 +41,7 @@ const Layout = ({ toggleDarkMode, darkMode }) => {
       case "/drafts":
         return "Drafts";
       default:
-        return "Dashboard";
+        return "";
     }
   };
 
@@ -48,13 +49,13 @@ const Layout = ({ toggleDarkMode, darkMode }) => {
 
   return (
     <>
-      <Sidebar title={title} activePath={location.pathname}  />  
+      <Sidebar title={title} activePath={location.pathname} />
       <div className='content-body w-full'>
         <Header
           toggleDarkMode={toggleDarkMode}
           darkMode={darkMode}
           title={title}
-          searchQuery={searchQuery} 
+          searchQuery={searchQuery}
           setSearchQuery={setSearchQuery}
         />
         <Routes>
@@ -62,7 +63,14 @@ const Layout = ({ toggleDarkMode, darkMode }) => {
           <Route path='/settings' element={<Settings />} />
           <Route path='/profile' element={<Profile />} />
           <Route path='/projects' element={<Projects />} />
-          <Route path='/courses' element={<Courses searchQuery={searchQuery} />} />
+          <Route
+            path='/courses'
+            element={<Courses searchQuery={searchQuery} />}
+          />
+          <Route
+            path='/courses/:courseId/:courseTitle'
+            element={<CourseDetails />}
+          />
           <Route path='/friends' element={<Friends />} />
           <Route path='/files' element={<Files />} />
           <Route path='/plans' element={<Plans />} />
