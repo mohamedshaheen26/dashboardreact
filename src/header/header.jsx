@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import './header.css';
 
-const Header = ({ toggleDarkMode, darkMode, title }) => {
+const Header = ({ toggleDarkMode, darkMode, title, searchQuery, setSearchQuery }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
   const profileImgRef = useRef(null);
@@ -36,6 +36,8 @@ const Header = ({ toggleDarkMode, darkMode, title }) => {
             className='p-10 border-ccc rad-10'
             type='search'
             placeholder='Type A Keyword'
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
           />
         </div>
         <div className='icons d-flex align-c'>

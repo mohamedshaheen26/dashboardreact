@@ -1,4 +1,5 @@
 import React, { Routes, Route, useLocation } from 'react-router-dom';
+import { useState } from 'react';
 
 import Sidebar from './sidebar/sidebar';
 import Header from './header/header';
@@ -15,6 +16,7 @@ import NotFound from './notFound';
 
 const Layout = ({ toggleDarkMode, darkMode }) => {
   const location = useLocation();
+  const [searchQuery, setSearchQuery] = useState("");
 
   const getTitle = () => {
     const path = location.pathname;
@@ -48,13 +50,19 @@ const Layout = ({ toggleDarkMode, darkMode }) => {
     <>
       <Sidebar title={title} activePath={location.pathname}  />  
       <div className='content-body w-full'>
-        <Header toggleDarkMode={toggleDarkMode} darkMode={darkMode} title={title} />
+        <Header
+          toggleDarkMode={toggleDarkMode}
+          darkMode={darkMode}
+          title={title}
+          searchQuery={searchQuery} 
+          setSearchQuery={setSearchQuery}
+        />
         <Routes>
           <Route index element={<Home />} />
           <Route path='/settings' element={<Settings />} />
           <Route path='/profile' element={<Profile />} />
           <Route path='/projects' element={<Projects />} />
-          <Route path='/courses' element={<Courses />} />
+          <Route path='/courses' element={<Courses searchQuery={searchQuery} />} />
           <Route path='/friends' element={<Friends />} />
           <Route path='/files' element={<Files />} />
           <Route path='/plans' element={<Plans />} />
