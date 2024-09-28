@@ -4,7 +4,7 @@ import './courses.css';
 
 const CoursePlaceholder = () => (
   <ContentLoader
-    speed={3}
+    speed={2}
     width={400}
     height={520}
     viewBox="0 0 400 520"
@@ -33,9 +33,10 @@ const Courses = ({ searchQuery }) => {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
         const data = await response.json();
-        console.log("Fetched courses:", data);
-        setCourses(data || []);
-        setLoading(false);
+        setTimeout(() => {
+          setCourses(data || []);
+          setLoading(false);
+        }, 3000)
       } catch (error) {
         setError(error.message);
         setLoading(false);
