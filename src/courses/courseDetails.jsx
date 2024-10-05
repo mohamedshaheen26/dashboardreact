@@ -4,10 +4,10 @@ import { useParams } from "react-router-dom";
 import "./courseDetails.css";
 
 const CourseDetails = () => {
-  const { courseId, courseTitle } = useParams();
+  const { courseId } = useParams();
   const [course, setCourse] = useState(null);
   const [openIndex, setOpenIndex] = useState(null);
-  
+
   const toggleAccordion = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
@@ -26,8 +26,6 @@ const CourseDetails = () => {
 
     fetchCourseDetails();
   }, [courseId]);
-
-  if (!course) return <div>Loading...</div>;
 
   const renderStars = (rating) => {
     const totalStars = 5;
@@ -83,6 +81,9 @@ const CourseDetails = () => {
       "0"
     )}`;
   };
+
+  if (!course) return <div>Loading ...</div>;
+
   return (
     <div className='content-wrapper d-flex flex-wrap'>
       <div className='course-details d-flex gap-20'>

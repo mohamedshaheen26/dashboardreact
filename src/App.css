@@ -749,16 +749,14 @@ body {
   background-color: #444;
 }
 
+.dark-mode .accordion-content ul li:hover {
+  background-color: #636363;
+}
+
 /* Firefox scrollbar styling */
 @media (prefers-color-scheme: dark) {
   .dark-mode {
     scrollbar-width: thin;
     scrollbar-color: #555 #333;
   }
-}
-
-.spinner-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }

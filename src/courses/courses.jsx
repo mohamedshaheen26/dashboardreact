@@ -37,7 +37,7 @@ const Courses = ({ searchQuery }) => {
         setTimeout(() => {
           setCourses(data || []);
           setLoading(false);
-        }, 3000);
+        }, 1000);
       } catch (error) {
         setError(error.message);
         setLoading(false);
